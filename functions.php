@@ -1,9 +1,5 @@
-<!-- 
-     have all the thing except session storage for color setters for the respective dates.
-I am working on this.
-  Thanks😊 -->
-
 <?php 
+
 if(isset($_POST['func']) && !empty($_POST['func'])){ 
     switch($_POST['func']){ 
         case 'getCalender': 
@@ -13,8 +9,9 @@ if(isset($_POST['func']) && !empty($_POST['func'])){
             break; 
     } 
 } 
- 
-function getCalender($year = '', $month = ''){ 
+
+function getCalender($year = '', $month = '')
+{ 
     $dateYear = ($year != '')?$year:date("Y"); 
     $dateMonth = ($month != '')?$month:date("m"); 
     $date = $dateYear.'-'.$dateMonth.'-01'; 
@@ -27,7 +24,10 @@ function getCalender($year = '', $month = ''){
     $prevYear = date("Y", strtotime('-1 month', strtotime($date))); 
     $totalDaysOfMonth_Prev = cal_days_in_month(CAL_GREGORIAN, $prevMonth, $prevYear); 
 ?> 
-    <main class="calendar-contain">
+
+
+
+    <main>
         <div class="flex-container"> 
             <div class="title-bar__month"> 
                 <select class="month-dropdown"> 
@@ -43,7 +43,7 @@ function getCalender($year = '', $month = ''){
             
         </div> 
         
-        <div >
+        
         <table class="center">
             <thead>
                 <tr>
@@ -111,9 +111,7 @@ function getCalender($year = '', $month = ''){
             ?>
             </tbody>
         </table>
-        </div>
-        
-         
+
         <form class="centerfooter" action="" method="post">
             <input style="font-size : 1.8rem; margin:1rem" type="text" name="date" placeholder="Enter Any Date">
             <button type="submit" name="Submit" class="btnenter">Enter</button>
@@ -121,7 +119,7 @@ function getCalender($year = '', $month = ''){
        
     </main> 
  
-    <script> 
+    <script type="text/javascript"> 
         function getCalendar(target_div, year, month){ 
             $.ajax({ 
                 type:'POST', 
@@ -142,9 +140,9 @@ function getCalender($year = '', $month = ''){
             });
         }); 
     </script> 
-<?php 
-} 
- 
+<?php
+}
+
 function getMonthList($selected = ''){ 
     $options = ''; 
     for($i=1;$i<=12;$i++) 
@@ -167,4 +165,28 @@ function getYearList($selected = ''){
     } 
     return $options; 
 } 
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+ 
+   
+
+
+ 
+
+ 
 
