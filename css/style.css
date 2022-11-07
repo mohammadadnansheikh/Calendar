@@ -1,0 +1,53 @@
+ th {
+    padding-top: 2.2rem;
+    padding-bottom: 2.2rem;
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  td {
+    
+    
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    padding: 2.2rem;
+  }
+  .centerfooter {
+    margin: auto;
+    width: 40%;
+    padding: 10px;
+  }
+  .btnenter{
+    margin:1rem;
+    font-size : 1.8rem;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+  }
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .month-dropdown {
+    font-size: 1.8rem;
+  }
+  .year-dropdown{
+    font-size: 1.8rem;
+  }
