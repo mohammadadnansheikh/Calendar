@@ -10,7 +10,7 @@ require_once 'functions.php';
 <meta charset="utf-8">
 
 <!-- Stylesheet file -->
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 
 <!-- jQuery library -->
 <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
