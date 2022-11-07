@@ -135,14 +135,11 @@ function getCalender($year = '', $month = ''){
           
         $(document).ready(function(){ 
             $('.month-dropdown').on('change',function(){ 
-                getCalendar('calendar_div',$('.year-dropdown').val(), $('.month-dropdown').val(),  $('.btnenter').val()); 
+                getCalendar('calendar_div',$('.year-dropdown').val(), $('.month-dropdown').val()); 
             }); 
             $('.year-dropdown').on('change',function(){ 
-                getCalendar('calendar_div', $('.year-dropdown').val(), $('.month-dropdown').val(), $('.btnenter').val()); 
+                getCalendar('calendar_div', $('.year-dropdown').val(), $('.month-dropdown').val()); 
             });
-            $('.year-dropdown').on('submit',function(){ 
-                getCalendar('calendar_div', $('.year-dropdown').val(), $('.month-dropdown').val(), $('.btnenter').val()); 
-            }); 
         }); 
     </script> 
 <?php 
