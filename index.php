@@ -1,10 +1,12 @@
 <?php  
 require_once 'functions.php'; 
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>PHP</title>
+<title>PHP Calendar</title>
 <meta charset="utf-8">
 <link rel="stylesheet" href="style.css">
 <script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
