@@ -6,7 +6,7 @@ require_once 'functions.php';
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>PHP Event Calendar by CodexWorld</title>
+<title>PHP Calendar</title>
 <meta charset="utf-8">
 
 
