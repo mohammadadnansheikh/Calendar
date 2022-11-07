@@ -1,20 +1,9 @@
-<!-- I have all the thing except session storage for color setters for the respective dates.
+<!-- 
+     have all the thing except session storage for color setters for the respective dates.
 I am working on this.
   Thanks😊 -->
 
 <?php 
-
-
- // starting the session
- session_start();
-
-
- if (isset($_POST['Submit'])) { 
- $_SESSION['date'] = $_POST['date'];
- } 
-
- 
-
 if(isset($_POST['func']) && !empty($_POST['func'])){ 
     switch($_POST['func']){ 
         case 'getCalender': 
