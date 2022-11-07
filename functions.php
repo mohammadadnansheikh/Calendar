@@ -1,8 +1,3 @@
-<!-- 
-     have all the thing except session storage for color setters for the respective dates.
-I am working on this.
-  Thanks😊 -->
-
 <?php 
 if(isset($_POST['func']) && !empty($_POST['func'])){ 
     switch($_POST['func']){ 
